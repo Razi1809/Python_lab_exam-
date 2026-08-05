@@ -32,7 +32,8 @@ def prepare_results(students):
     return results
 #call function 
 final_results=prepare_results(students_marks)
-#print("Studnet Results:")
+#print formatted result lines 
+print("Studnet Results:")
 for sid, info in final_results.items():
     print(f"{sid} - {info['name']}: Average = {info['average']}, Grade= {info['grade']}")
 #grade frequency 
